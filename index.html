@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discussion Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>Discussion Portal</h1>
+  </div>
+
+  <div class="container">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+
+      <div class="top-bar">
+        <button id="newQuestionBtn">New Question Form</button>
+        <input type="text" id="searchBox" placeholder="search questions...">
+      </div>
+
+      <div id="questionList"></div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+
+      <!-- QUESTION FORM -->
+      <div id="questionFormSection">
+
+        <h1>Welcome to Discussion Portal !</h1>
+        <p>Enter a subject and question to get started</p>
+
+        <input type="text" id="subject" placeholder="Subject">
+
+        <textarea id="question" placeholder="Question"></textarea>
+
+        <button id="submitQuestion">Submit</button>
+
+      </div>
+
+      <!-- QUESTION DETAILS -->
+      <div id="questionDetails" class="hidden">
+
+        <h2>Question</h2>
+
+        <div class="question-box">
+          <h3 id="displaySubject"></h3>
+          <p id="displayQuestion"></p>
+        </div>
+
+        <button id="resolveBtn">Resolve</button>
+
+        <h2>Responses</h2>
+
+        <div id="responseList"></div>
+
+        <h2>Add Response</h2>
+
+        <input type="text" id="name" placeholder="Enter Name">
+
+        <textarea id="comment" placeholder="Enter Comment"></textarea>
+
+        <button id="submitResponse">Submit</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
